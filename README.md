@@ -5,43 +5,43 @@ A production-style RESTful API for user CRUD operations built with Java Spring B
 containerised with Docker, and deployed on AWS EC2.
 
 ## Architecture
-┌──────────────────────────────┐
-│   Client                     │
-│   (Postman / Frontend)       │
-└──────────────┬───────────────┘
-               │  HTTP Request
-               ▼
-┌──────────────────────────────┐
-│   REST Controller Layer      │
-│   /api/users  (5 endpoints)  │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│   Service Layer              │
-│   Business Logic             │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│   Repository Layer           │
-│   Spring Data JPA            │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│   MySQL Database             │
-└──────────────────────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│   Docker Container           │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│   AWS EC2                    │
-└──────────────────────────────┘
+  ┌──────────────────────────────┐
+  │   Client                     │
+  │   (Postman / Frontend)       │
+  └──────────────┬───────────────┘
+                 │  HTTP Request
+                 ▼
+  ┌──────────────────────────────┐
+  │   REST Controller Layer      │
+  │   /api/users  (5 endpoints)  │
+  └──────────────┬───────────────┘
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   Service Layer              │
+  │   Business Logic             │
+  └──────────────┬───────────────┘
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   Repository Layer           │
+  │   Spring Data JPA            │
+  └──────────────┬───────────────┘
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   MySQL Database             │
+  └──────────────────────────────┘
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   Docker Container           │
+  └──────────────┬───────────────┘
+                 │
+                 ▼
+  ┌──────────────────────────────┐
+  │   AWS EC2                    │
+  └──────────────────────────────┘
 ## Tech Stack
 - **Language:** Java 17
 - **Framework:** Spring Boot, Spring Data JPA
